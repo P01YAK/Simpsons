@@ -12,4 +12,4 @@ excerpt: Меню
 
 # [[characters|Персонажи]]
  * [[homer simpson|Гомер Симпсон]]
- * [ссылка в Сибирь](characters/)
+ * [ссылка в Сибирь](./characters/)
