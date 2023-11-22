@@ -1,6 +1,9 @@
 ---
 title: Все персонажи
 excerpt: Все персонажи сериала "Симпсоны"
-tags:
-  - "#characters"
+tags: []
 ---
+```dataview
+TABLE file.tag 
+FROM #characters 
+```
