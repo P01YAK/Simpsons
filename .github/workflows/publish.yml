@@ -1,6 +1,6 @@
 name: Publish Markdown Files
 env:
-  BLOG_REPO: P01YAK/Simpsons.git
+  BLOG_REPO: P01YAK/simpsons-next-template
   PUBLISH_DIR: publish
 on:
   workflow_dispatch:
@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v3
         with:
           path: temp_md
-      - name: Checkout Simpsons template repo
+      - name: Checkout simpsons-next-template repo
         uses: actions/checkout@v3
         with:
-          path: temp_blog
+          path: temp_pages
           repository: ${{ env.BLOG_REPO }}
       - name: Install obsidian-export
         run: |
@@ -25,12 +25,12 @@ jobs:
           chmod +x obsidian-export_Linux-x86_64.bin
       - name: Run obsidian-export
         run: |
-          rm -rf temp_blog/common_md && mkdir temp_blog/common_md
-          ./obsidian-export_Linux-x86_64.bin ./temp_md/${{ env.PUBLISH_DIR }} temp_blog/common_md
-      - name: Move dir to currDir
+          rm -rf temp_pages/common_md && mkdir temp_pages/common_md
+          ./obsidian-export_Linux-x86_64.bin ./temp_md/${{ env.PUBLISH_DIR }} temp_pages/common_md
+      - name: Move pages dir to currDir
         run: |
-          cp -r temp_blog/. .
-          rm -rf temp_blog
+          cp -r temp_pages/. .
+          rm -rf temp_pages
           rm -rf temp_md
       - name: Deploy Vercel
         uses: amondnet/vercel-action@v20
