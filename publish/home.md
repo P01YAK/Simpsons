@@ -8,10 +8,7 @@ excerpt: Меню
 
 # [[episodes|Эпизоды]]
 - Сезон 1
-	1. [[episode 1|«Симпсоны жарятся на открытом огне»]]
+	- [[episode 1|«Симпсоны жарятся на открытом огне»]]
 
 # [[characters|Персонажи]]
-```dataview
-TABLE WITHOUT ID title as "Персонаж", file.link as "Ссылка"
-FROM #characters
-```
+ * [[homer simpson|Гомер Симпсон]]
