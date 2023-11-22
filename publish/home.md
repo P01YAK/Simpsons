@@ -12,5 +12,5 @@ excerpt: Меню
 
 # [[characters|Персонажи]]
  * [[homer simpson|Гомер Симпсон]]
- * [ссылка в Сибирь](./characters/)
+ * [link](./characters/)
  * [fssxc](seasons/)
