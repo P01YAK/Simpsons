@@ -12,4 +12,4 @@ excerpt: Меню
 
 # [[characters|Персонажи]]
  * [[homer simpson|Гомер Симпсон]]
- * [ссылка на папку?](characters/)
+ * [ссылка на папку?](./characters/)
