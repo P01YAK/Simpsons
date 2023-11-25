@@ -4,7 +4,7 @@ excerpt: Меню
 aliases:
   - На главную
 ---
-> SOON
+> WIP
 
 # [[simpsons/publish/seasons|Сезоны]]
 - Сезон 1
